@@ -1,0 +1,104 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: transparent;
+    color: white;
+    height: 100%;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .intro {
+    max-width: 500px;
+    margin: 20px;
+    margin-top: 100px;
+    text-align: center;
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+  }
+  
+  .intro h2 {
+    font-size: 4rem;
+    color: #00ffff;
+  }
+  
+  .intro p {
+    font-size: 1.5rem;
+  }
+  
+  .highlight {
+    color: #00ffff;
+  }
+  
+  .image-container {
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border: 5px solid #00ffff;
+    border-radius: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    body{
+      height: 85%;
+    }
+    main {
+      flex-direction: column;
+      text-align: center;
+      padding: 35px;
+    }
+  
+    .intro{
+      margin-top: 20px;
+    }
+  
+    .intro h1 {
+      font-size: 1.5rem;
+      
+    }
+  
+    .intro h2 {
+      font-size: 2.4rem;
+      margin-top: 0;
+    }
+  
+    .intro p {
+      font-size: 1rem;
+    }
+  }
+  
+
+
+  /* Typewriter animation */
+
+
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0); /* No movement */
+    }
+    50% {
+      transform: translateY(-10px); /* Move up slightly */
+    }
+  }
+
+  h1, h2 {
+    animation: float 3s ease-in-out infinite; /* Apply floating animation */
+    text-align: center; /* Center the text */
+  }
